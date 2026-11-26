@@ -20,6 +20,7 @@ export interface ManageItem {
   storage?: StorageLocation; // 보관 구역 (식재료일 때만 선택적으로 사용)
   memo?: string; // 메모 (선택)
   purchaseUrl?: string; // 최저가 구매 링크 (선택)
+  photoUrl?: string; // 품목 사진 Data URL (선택)
 }
 
 // 3. 월별 공과금 및 N빵 정산 항목
@@ -31,6 +32,7 @@ export interface UtilityBill {
   amount: number; // 총 금액 (원)
   splitCount: number; // N빵 인원수
   isPaid: boolean; // 납부 완료 여부
+  receiptUrl?: string; // 고지서·영수증 사진 Data URL (선택)
 }
 
 // 4. 캘린더 일정 및 자취 루틴
